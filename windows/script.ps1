@@ -34,6 +34,10 @@ for ($i = 1; $i -le 5; $i++) {
 }
 Write-Host ''
 
+# --- Start in Desktop ---
+Set-Location $desktopPath
+Write-ProgressMsg "Starting setup in: $desktopPath"
+
 # --- Step 1: Winget ---
 Write-Host @'
 ======================================
